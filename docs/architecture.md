@@ -43,7 +43,7 @@ flowchart TB
     application["Application"]
     api["API"]
     postgres[("PostgreSQL")]
-    %% GitHub clips a flowchart line past ~200px instead of wrapping it.
+    %% GitHub draws each node label in a 120px nowrap slot. Keep every line shorter than "Worker services".
     controller["Cluster<br/>controller"]
     pod["Kubernetes<br/>sandbox pod"]
     shim["SPACE<br/>runtime shim"]
