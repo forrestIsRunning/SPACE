@@ -43,12 +43,13 @@ flowchart TB
     application["Application"]
     api["API"]
     postgres[("PostgreSQL")]
-    controller["Cluster controller"]
-    pod["Kubernetes sandbox pod"]
-    shim["SPACE runtime shim"]
+    %% GitHub clips a flowchart line past ~200px instead of wrapping it.
+    controller["Cluster<br/>controller"]
+    pod["Kubernetes<br/>sandbox pod"]
+    shim["SPACE<br/>runtime shim"]
     workers["Worker services"]
-    storage[("Object storage<br/>templates / snapshots")]
-    vm["Firecracker microVM"]
+    storage[("Object storage<br/>templates /<br/>snapshots")]
+    vm["Firecracker<br/>microVM"]
     data["Data plane"]
     guest["Guest process"]
 
